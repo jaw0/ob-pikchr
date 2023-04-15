@@ -1,0 +1,29 @@
+
+** What is this?
+
+Org Babel Support for pikchr
+
+** What is pikchr
+
+a PIC-like markup language for diagrams in technical documentation.
+[[https://pikchr.org]]
+
+** How do I use it?
+
+   Open an org file, add a SRC block and evaluate as you would any Org
+   SRC block (usually =C-c C-c=).
+
+   #+BEGIN_SRC pikchr :darkmode  :file filepic.svg
+   fontscale = 1.25
+   margin    = 2mm
+   circle "words"
+   arrow
+   box "images" rad 0.2 fill 0x000088
+   arrow
+   box "?" rad 0.2
+   arrow
+   circle "profit!" fill 0x008800
+   #+END_SRC
+
+[[screenshot.png]]
+
