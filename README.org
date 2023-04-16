@@ -8,6 +8,16 @@ Org Babel Support for pikchr
 a PIC-like markup language for diagrams in technical documentation.
 [[https://pikchr.org]]
 
+** Prerequisites
+
+you must have [[https://pikchr.org][pikchr]] installed
+
+** Installing
+
+*** using the [[https://github.com/radian-software/straight.el][straight]] package manager
+
+(straight-use-package  '(ob-pikchr :type git :host github :repo "jaw0/ob-pikchr"))
+
 ** How do I use it?
 
    Open an org file, add a SRC block and evaluate as you would any Org
